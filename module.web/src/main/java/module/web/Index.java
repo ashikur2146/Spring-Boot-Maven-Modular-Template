@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import module.core.Calculate;
 import module.core.CalculateServiceImpl;
@@ -14,6 +15,7 @@ import module.core.CalculateServiceImpl;
 @Component
 @Import(CalculateServiceImpl.class)
 @RequestMapping("/public/api/v1")
+@RestController
 public class Index {
 
 	private final List<Number> numbers = Arrays.asList(2, 3, 4, 5);
