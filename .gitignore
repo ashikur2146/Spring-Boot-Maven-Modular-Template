@@ -1,5 +1,19 @@
 # Compiled class file
 *.class
+*/.classpath
+*/*/.classpath
+# sub module gitignores
+*/*/.gitignore
+
+# ide generated files
+.settings
+*/.settings
+.project
+*/.project
+
+# binary directories
+*/bin
+*/target
 
 # Log file
 *.log
