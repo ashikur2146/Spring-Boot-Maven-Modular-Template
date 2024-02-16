@@ -5,4 +5,6 @@ module module.web {
 	requires spring.boot.autoconfigure;
 	requires spring.boot.starter.web;
 	requires spring.web;
+	requires spring.beans;
+	requires spring.context;
 }
