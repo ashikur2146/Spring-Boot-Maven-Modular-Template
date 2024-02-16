@@ -5,12 +5,12 @@ Java module system improves the loose coupling and provides improved code organi
 
 Go to the project root and open up a terminal then run the following command
 
-``` maven
+``` code
 build and run command: mvn install && mvn spring-boot:run -pl module.web
 ```
 
 # Reference
 
-``` url
+``` code
 https://spring.io/guides/gs/multi-module
 ```
