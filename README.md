@@ -8,6 +8,10 @@ Go to the project root and open up a terminal then run the following command
 ``` mvn
 mvn install && mvn spring-boot:run -pl module.web
 ```
+or,
+``` mvn
+./mvnw install && ./mvnw spring-boot:run -pl application
+```
 
 # Reference
 
