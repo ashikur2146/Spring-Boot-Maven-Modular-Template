@@ -10,7 +10,7 @@ mvn install && mvn spring-boot:run -pl module.web
 ```
 or,
 ``` mvn
-./mvnw install && ./mvnw spring-boot:run -pl application
+./mvnw install && ./mvnw spring-boot:run -pl module.web
 ```
 
 # Reference
