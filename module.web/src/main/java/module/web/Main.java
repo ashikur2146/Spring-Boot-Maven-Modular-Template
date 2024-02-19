@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class Main {
 
 	private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
@@ -15,6 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		LOGGER.info("### application is going to be started ###");
 		SpringApplication.run(Main.class, args);
+		LOGGER.info(">>> application started successfully!!!");
 	}
 
 }
