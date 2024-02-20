@@ -2,6 +2,7 @@ package module.web;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
@@ -18,6 +19,8 @@ import module.core.CalculateServiceImpl;
 @RestController
 public class Index {
 
+	private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+
 	private final List<Number> numbers = Arrays.asList(2, 3, 4, 5);
 	
 	private Calculate<List<Number>, Double> calculate;
@@ -29,6 +32,7 @@ public class Index {
 
 	@GetMapping("/index")
 	public String index() throws Exception {
+		LOGGER.info("~::index is called::~");
 		return "Application is running. Sum is: " + calculate.calculate(numbers);
 	}
 }
